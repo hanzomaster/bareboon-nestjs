@@ -1,8 +1,8 @@
 {
   "name": "bareboon",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "This is the minimum bareboon for a NestJS project",
+  "author": "Thinh Tran",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -26,6 +26,8 @@
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/schedule": "^3.0.4",
     "@nestjs/swagger": "^7.1.13",
+    "@ts-rest/core": "^3.30.4",
+    "@ts-rest/nest": "^3.30.4",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "compression": "^1.7.4",
@@ -33,7 +35,8 @@
     "helmet": "^7.0.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
-    "supertokens-node": "^16.3.1"
+    "supertokens-node": "^16.3.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
