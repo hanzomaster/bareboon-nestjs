@@ -15,7 +15,7 @@ async function bootstrap() {
   app.use(compression());
 
   const globalPrefix = process.env.APP_ROUTE_PREFIX ?? '';
-  app.setGlobalPrefix(globalPrefix);
+  // app.setGlobalPrefix(globalPrefix);
 
   app.useGlobalPipes(
     new ValidationPipe({
