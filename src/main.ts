@@ -8,7 +8,10 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.enableCors();
+  app.enableCors({
+    credentials: true,
+    origin: process.env.BASE_WEB_URL,
+  });
   app.use(cookieParser());
   app.use(compression());
   app.use(helmet());
